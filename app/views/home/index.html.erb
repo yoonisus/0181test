@@ -1,0 +1,8 @@
+<h1>멋사 강의 목록</h1>
+	<% unless Lecture.all.empty? %>
+	    <% @lectures.each do |l| %>
+	        <%= l.title %><br/>
+	    <% end %>
+	<% else %>
+	    <h2>강의 목록이 없습니다!</h2>
+	<% end %>
